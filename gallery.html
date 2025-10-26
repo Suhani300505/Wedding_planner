@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weeding Planner</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <style>
+     
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      z-index: 5;
+
+    }
+
+    .logo_div {
+      text-align: center;
+
+    }
+
+    .svg {
+      position: absolute;
+      z-index: 2;
+      top: -12px;
+      left: -15px;
+      width: 130%;
+      height: 130%;
+      animation: rotate 3s linear infinite;
+    }
+
+    .nav-item {
+      padding: 25px 25px 10px 25px;
+    }
+
+    .banner {
+      margin-top: -200px;
+      position: relative;
+      z-index: -5;
+    }
+
+    .background_image {
+      background-image: url('assets/img/header-bg.png');
+      background-repeat: repeat-x;
+      width: 100%;
+      top: 0px;
+      z-index: -2;
+    }
+
+    .heading_block,.heading
+    {
+      text-align: center;
+    }
+      #filters {
+        font-family: 'Tangerine', serif;
+        font-size: 48px;
+      }
+      .video
+      {
+        height: 200px !important;
+      }
+      .video video
+      {
+        width: 100%;
+        object-fit: cover;
+      }
+      .portfolio
+      {
+        height: 250px !important;
+      }
+      .portfolio-wrapper
+      {
+        height: 80%;
+      }
+      .portfolio img
+      {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+</head>
+
+<body>
+
+  <!-- *************** Header *************** -->
+  <div id="header"></div>
+  <!-- *************** End Header *************** -->
+
+  <!-- *************** Banner *************** -->
+
+  <div class="banner">
+    <h1 class="banner_h1">Gallery</h1>
+  </div>
+
+  <!-- *************** End Banner *************** -->
+
+  <!-- *************** Gallery *************** -->
+
+  <div class="container">
+
+
+    <ul id="filters">
+      <li><span class="filter active" data-filter=".mehndi, .haldi, .chori, .stage, .video">All</span></li>
+      <li><span class="filter" data-filter=".mehndi">Mehndi</span></li>
+      <li><span class="filter" data-filter=".haldi">Haldi</span></li>
+      <li><span class="filter" data-filter=".chori">Chori</span></li>
+      <li><span class="filter" data-filter=".stage">Stage</span></li>
+      <li><span class="filter" data-filter=".video">Video</span></li>
+    </ul>
+
+    <div id="portfoliolist"> 
+
+
+
+
+      <div class="portfolio transform a" data-cat="card">
+        <div class="portfolio-wrapperc">
+          <img src="assets/img/img1.jpg" alt=""  class="gallery_img"/>
+        </div>
+      </div>
+
+      <div class="portfolio transform a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/img2.jpg" alt=""  class="gallery_img"/>
+        </div>
+      </div>
+
+      <div class="portfolio transform a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/img3.jpg" alt=""  class="gallery_img"/>
+        </div>
+      </div>
+
+
+
+      <div class="portfolio mehndi a transform" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/mehndi1.jpeg" alt=""  class="gallery_img"/>
+        </div>
+      </div>
+
+      <div class="portfolio mehndi a transform" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/mehndi2.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="portfolio mehndi a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/mehndi3.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="portfolio mehndi a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/mehndi4.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="portfolio mehndi a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/mehndi5.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="portfolio mehndi a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/mehndi6.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="portfolio mehndi a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/mehndi7.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="portfolio mehndi a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/mehndi8.jpeg" alt="" />
+        </div>
+      </div>
+
+
+      <div class="portfolio haldi a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/haldi1.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="portfolio haldi a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/haldi2.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="portfolio haldi a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/haldi3.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="portfolio haldi a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/haldi4.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="portfolio chori a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/chori1.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="portfolio chori a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/chori2.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="portfolio chori a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/chori3.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="portfolio chori a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/chori4.jpg" alt="" />
+        </div>
+      </div>
+
+
+      <div class="portfolio chori" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/chori5.jpg" alt="" class="img_gallery">
+        </div>
+      </div>
+      <div class="portfolio chori a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/chori6.jpeg" alt="" class="img_gallery">
+        </div>
+      </div>
+      <div class="portfolio chori a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/chori7.jpg" alt="" class="img_gallery">
+        </div>
+      </div>
+      <div class="portfolio chori" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/chori8.jpg" alt="" class="img_gallery">
+        </div>
+      </div>
+
+      <div class="portfolio stage a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/stage1.jpeg" alt=""class="img_gallery">
+        </div>
+      </div>
+      <div class="portfolio stage a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/stage2.jpeg" alt="" class="img_gallery"/>
+        </div>
+      </div>
+      <div class="portfolio stage a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/stage3.jpeg" alt="" class="img_gallery"/>
+        </div>
+      </div>
+      <div class="portfolio stage a" data-cat="card">
+        <div class="portfolio-wrapper">
+          <img src="assets/img/stage4.jpeg" alt=""  clasclass="img_gallery"="img_gallery"/>
+        </div>
+      </div>
+
+
+
+      <div class="portfolio video" data-cat="card">
+        <div class="portfolio-wrapper">
+         <video loop src="assets\img\video1.mp4" controls class="video"></video> 
+        </div>
+      </div>
+      <div class="portfolio video" data-cat="card">
+        <div class="portfolio-wrapper">
+         <video loop src="assets\img\video2.mp4" controls class="video"></video>
+          
+        </div>
+      </div>
+      <div class="portfolio video" data-cat="card">
+        <div class="portfolio-wrapper">
+          <video loop src="assets\img\video3.mp4" controls class="video"></video>
+          
+        </div>
+      </div>
+      <div class="portfolio video" data-cat="card">
+        <div class="portfolio-wrapper">
+          <video loop src="assets\img\video4.mp4" controls class="video"></video>
+          
+        </div>
+      </div>
+
+      <div class="portfolio video" data-cat="card">
+        <div class="portfolio-wrapper">
+          <video src="assets\img\video5.mp4" controls class="video"></video>
+          
+        </div>
+      </div>
+
+      <div class="portfolio video" data-cat="card">
+        <div class="portfolio-wrapper">
+          <video src="assets\img\video6.mp4" controls class="video"></video>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+  <!-- *************** Footer *************** -->
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <!-- Footer -->
+
+
+  <!-- *************** End Footer *************** -->
+
+  <!-- *************** Link *************** -->
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+  <script type="text/javascript" src="assets/js/head_foot.js"></script>
+  <script type="text/javascript"
+    src="http://www.queness.com/resources/html/simple-portfolio-page/js/jquery.mixitup.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      var filterList = {
+        init: function () {
+          $('#portfoliolist').mixItUp(
+          {
+            selectors: {
+              target: '.portfolio',
+              filter: '.filter'
+            },
+            load: {
+              filter: '.app'
+            }
+          });
+        }
+      };
+      filterList.init();
+    });   
+    $(document).ready(function(){
+      $('#all').addClass('active');
+      $('.portfolio').css('style','display:inline-block;');
+      $('#portfoliolist').removeClass('fail');
+    });
+  </script>
+
+  <!-- *************** Link *************** -->
+</body>
+
+</html>

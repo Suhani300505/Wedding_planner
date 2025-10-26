@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weeding Planner</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style type="text/css">
+        .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      z-index: 5;
+
+    }
+
+    .logo_div {
+      text-align: center;
+
+    }
+
+    .svg {
+      position: absolute;
+      z-index: 2;
+      top: -12px;
+      left: -15px;
+      width: 130%;
+      height: 130%;
+      animation: rotate 3s linear infinite;
+    }
+
+    .nav-item {
+      padding: 25px 25px 10px 25px;
+    }
+
+    .banner {
+      margin-top: -200px;
+      position: relative;
+      z-index: -5;
+    }
+
+    .background_image {
+      background-image: url('assets/img/header-bg.png');
+      background-repeat: repeat-x;
+      width: 100%;
+      top: 0px;
+      z-index: -2;
+    }
+
+    .heading_block,.heading
+    {
+      text-align: center;
+    }
+        @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+
+        :root {
+            --d: 700ms;
+            --e: cubic-bezier(0.19, 1, 0.22, 1);
+            --font-sans: 'Rubik', sans-serif;
+            --font-serif: 'Cardo', serif;
+        }
+
+        
+
+        @media (min-width: 600px) {
+            .page-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 800px) {
+            .page-content {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            color: whitesmoke;
+            background-color: whitesmoke;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (min-width: 600px) {
+            .card {
+                height: 150px;
+            }
+        }
+
+        .card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 110%;
+            background-size: cover;
+            background-position: 0 0;
+            transition: transform calc(var(--d) * 1.5) var(--e);
+            pointer-events: none;
+        }
+
+        .card:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 250%;
+            pointer-events: none;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
+            transform: translateY(-20%);
+            transition: transform calc(var(--d) * 2) var(--e);
+        }
+
+        .card:nth-child(1):before {
+            background-image: url("assets/img/serives1.jpg");
+        }
+
+        .card:nth-child(2):before {
+            background-image: url("assets/img/event2.jpg");
+
+        }
+
+        .card:nth-child(3):before {
+            background-image: url("assets/img/serives3.jpeg");
+
+        }
+
+        .card:nth-child(4):before {
+            background-image: url("assets/img/serives4.jpeg");
+
+        }
+
+        .card:nth-child(5):before {
+            background-image: url("assets/img/serives5.jpeg");
+
+        }
+
+        .card:nth-child(6):before {
+            background-image: url("assets/img/serives6.jpg");
+
+        }
+
+        .card:nth-child(7):before {
+            background-image: url("assets/img/serives7.jpg");
+
+        }
+
+        .card:nth-child(8):before {
+            background-image: url("assets/img/serives8.jpg");
+
+        }
+         .card:nth-child(9):before {
+            background-image: url("assets/img/serives9.jpg");
+        }
+
+        .card:nth-child(10):before {
+            background-image: url("assets/img/serives10.jpeg");
+
+        }
+
+        .card:nth-child(11):before {
+            background-image: url("assets/img/serives11.jpeg");
+
+        }
+
+        .card:nth-child(12):before {
+            background-image: url("assets/img/serives12.jpg");
+
+        }
+
+        .content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 1rem;
+            transition: transform var(--d) var(--e);
+            z-index: 1;
+        }
+
+        .content>*+* {
+            margin-top: 1rem;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            text-shadow: 2px 2px 2px black;
+            
+        }
+
+        
+        @media (hover: hover) and (min-width: 600px) {
+            .card:after {
+                transform: translateY(0);
+            }
+
+            .content {
+                transform: translateY(calc(100% - 4.5rem));
+            }
+
+            .content>*:not(.title) {
+                opacity: 0;
+                transform: translateY(-1rem);
+                transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+            }
+
+            .card:hover,
+            .card:focus-within {
+                align-items: center;
+            }
+
+            .card:hover:before,
+            .card:focus-within:before {
+                transform: translateY(-4%);
+            }
+
+            .card:hover:after,
+            .card:focus-within:after {
+                transform: translateY(-50%);
+            }
+
+            .card:hover .content,
+            .card:focus-within .content {
+                transform: translateY(0);
+            }
+
+            .card:hover .content>*:not(.title),
+            .card:focus-within .content>*:not(.title) {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: calc(var(--d) / 8);
+            }
+
+            .card:focus-within:before,
+            .card:focus-within:after,
+            .card:focus-within .content,
+            .card:focus-within .content>*:not(.title) {
+                transition-duration: 0s;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- *************** Header *************** -->
+    <div id="header"></div>
+    <!-- *************** End Header *************** -->
+
+    <!-- *************** Contant *************** -->
+
+    <div class="banner">
+        <h1 class="banner_h1">Services</h1>
+    </div>
+    <div class="container">
+        <main class="page-content">
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Wedding Managemant</h2>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Corporate Managemant</h2>
+                   
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">luxgery Managemant</h2>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">DJ Party Managemant</h2>
+                    
+                </div>
+                  
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Mehndi</h2>
+                   
+                </div>
+                  
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Bachlore Party</h2>
+                    
+                </div>
+                  
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Baby Shower</h2>
+                    
+                </div>
+                  
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Bussiness Management</h2>
+                   
+                </div>
+                  
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Sangeet</h2>
+                   
+                </div>
+                  
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Ring Cermoney</h2>
+                    
+                </div>
+                  
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Birthday</h2>
+                    
+                </div>
+                  
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Artist</h2>
+                   
+                </div>
+                  
+            </div>
+        </main>
+
+    </div>
+    <!-- *************** End Contant *************** -->
+
+
+    <!-- *************** Footer *************** -->
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <!-- Footer -->
+
+
+    <!-- *************** End Footer *************** -->
+
+    <!-- *************** Link *************** -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/head_foot.js"></script>
+
+    <!-- *************** Link *************** -->
+</body>
+
+</html>
